@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <style>
+        .left {
+
+display: inline-block;
+position: absolute;
+left: 30px;
+top: 10px;
+text-align: center;
+cursor: pointer;
+line-height: 3px;
+position: fixed;
+
+}
+
+
+.mid {
+
+display: block;
+width: 650px;
+margin: 30px auto;
+}
+
+.right {
+position: absolute;
+right: 20px;
+top: 30px;
+
+display: inline-block;
+
+}
+.navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 30px 22px;
+            color: black;
+
+        }
+
+        .btn {
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            padding: 6px;
+            margin: 0px 6px;
+            cursor: pointer;
+        }
+        .tileBox{
+            height: 200px;
+            width:300px;
+            border: 2px solid black;
+            margin: 50px;
+            /* border: solid 2px black; */
+
+        }
+    </style>
+</head>
+<body>
+<header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo">
+            <div>Study Mate</div>
+        </div>
+        <!-- mid box for navigation bar -->
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">My Workplace</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <!-- right box for search buttons -->
+        <div class="right">
+            <button class="btn">Profile</button>
+            
+        </div >
+
+        
+    </header>
+
+    <div class="tileBox" onclick="location.href='teacher_classroom.html';">
+        <h2>this is title/subject</h2>
+        <br>
+        <h3>teacher name</h3>
+    </div>
+
+    <div>
+        <button onclick="location.href='inputClassDetails.html';">create</button>
+    </div>
+</body>
+</html>

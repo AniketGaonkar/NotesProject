@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is what the teacher will see when clicked on one class tile</title>
+
+    <style>
+        .tabs {
+
+display: block;
+width: 650px;
+margin: 30px auto;
+}
+
+    .tabitems li{
+        display: inline-block;
+            font-size: 20px;
+    }
+    .tabitems li a {
+            text-decoration: none;
+            padding: 30px 22px;
+            color: black;
+
+    }
+    .smalltileBox{
+            height: 100px;
+            width:80%;
+            border: 2px solid black;
+            margin: auto auto;
+            margin-top: 20px;
+            /* border: solid 2px black; */
+
+        }
+
+    </style>
+</head>
+<body>
+    navbar here <br>
+    <h1>hello this is the classroom</h1>
+
+    <div class="tabs">
+        <ul class="tabitems">
+            <li><a href="#" class="active">Teachers Notes</a></li>
+            <li><a href="studentssection.html">Student Notes</a></li>
+            <li><a href="#">Discussion</a></li>
+                
+        </ul>
+    </div>
+    <div class="smalltileBox">
+        <h2>pdf name here</h2>
+        <h3>Date Of Upload</h3>
+    </div>
+    <div class="smalltileBox">
+        <h2>pdf name here</h2>
+        <h3>Date Of Upload</h3>
+    </div>
+
+    <div >
+        <button onclick="location.href='addnotes.html';">Add Notes</button>
+    </div>
+
+</body>
+</html>

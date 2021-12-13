@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students sorted based on their year</title>
+    <style>
+        .tileBox{
+            height: 200px;
+            width:300px;
+            border: 2px solid black;
+            margin: 50px;
+            /* border: solid 2px black; */
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Invite Students</h1>
+    <div class="tileBox">
+        <div class="studentsCat" onclick="location.href='StudentsFromSameCategory.html';">
+            <h2>Students from a particular Class</h2>
+            <br>
+            <h3>No. of students here</h3>
+        </div>
+        check here to select all students
+        <input type="checkbox" id="allstudents" value="1" onchange="myFunction(this)"/>
+        <br><br>
+        <button type="submit" id="createbutton" onclick="location.href='homepage.html';" disabled>Create Class</button>
+        <script type="text/javascript">
+            function myFunction(checkBox) {
+  
+            var checkBox = document.getElementById("allstudents");
+  
+            var createbut = document.getElementById("createbutton");
+
+ 
+             if (checkBox.checked){
+               createbut.disabled =false;
+             } else {
+               createbut.disabled = true;
+             }
+}
+
+        </script>
+
+        
+
+    </div>
+    
+</body>
+</html>
